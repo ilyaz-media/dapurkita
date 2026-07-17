@@ -142,7 +142,7 @@ function bookingWA() {
 Mohon konfirmasi reservasi saya.
 Terima kasih.`;
 
-    const nomorWA = "6281234567890";
+    const nomorWA = "6282129546021";
 
     const url =
         `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
