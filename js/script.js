@@ -105,3 +105,47 @@ new Swiper(".promoSlider", {
     },
 
 });
+
+
+
+// booking
+function bookingWA() {
+
+    const nama = document.getElementById("nama").value.trim();
+    const wa = document.getElementById("wa").value.trim();
+    const tanggal = document.getElementById("tanggal").value;
+    const jam = document.getElementById("jam").value;
+    const orang = document.getElementById("orang").value;
+    const catatan = document.getElementById("catatan").value.trim();
+
+    if (
+        nama === "" ||
+        wa === "" ||
+        tanggal === "" ||
+        jam === "" ||
+        orang === "Pilih jumlah tamu"
+    ) {
+        alert("Silakan lengkapi semua data terlebih dahulu.");
+        return;
+    }
+
+    const pesan =
+`Halo, saya ingin melakukan reservasi meja.
+
+👤 Nama : ${nama}
+📱 WhatsApp : ${wa}
+📅 Tanggal : ${tanggal}
+⏰ Jam : ${jam}
+👥 Jumlah Tamu : ${orang}
+📝 Catatan : ${catatan || "-"}
+
+Mohon konfirmasi reservasi saya.
+Terima kasih.`;
+
+    const nomorWA = "6281234567890";
+
+    const url =
+        `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+
+    window.open(url, "_blank");
+}
