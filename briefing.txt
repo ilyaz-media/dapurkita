@@ -1,0 +1,22 @@
+dapur-kita/
+
+│
+├── index.html
+│
+├── assets/
+│   ├── css/
+│   │     style.css
+│   │
+│   ├── js/
+│   │     script.js
+│   │
+│   ├── images/
+│   │      hero.png
+│   │      menu1.jpg
+│   │      menu2.jpg
+│   │      menu3.jpg
+│   │      menu4.jpg
+│   │      resto.jpg
+│   │
+│   └── icons/
+│
