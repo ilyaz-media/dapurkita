@@ -1,15 +1,5 @@
 const menus = [
-    // mie
-    {
-        id: 2,
-        nama: "Mie Goreng",
-        kategori: "mie",
-        harga: 22000,
-        rating: 4.8,
-        label: "Best Seller",
-        gambar: "images/menu/miegoreng.png",
-        deskripsi: "Mie goreng dengan topping ayam dan sayuran segar."
-    },
+
 
     // ayam
     {
@@ -55,7 +45,7 @@ const menus = [
         deskripsi: "Ayam goreng renyah dengan sambal pedas khas yang menggugah selera."
     },
     {
-        id: 5,
+        id: 7,
         nama: "Ayam rica",
         kategori: "ayam",
         harga: 24000,
@@ -65,7 +55,7 @@ const menus = [
         deskripsi: "Ayam rica pedas dengan bumbu rempah khas yang kaya rasa."
     },
     {
-        id: 6,
+        id: 8,
         nama: "Chicken katsu",
         kategori: "ayam",
         harga: 24000,
@@ -75,7 +65,67 @@ const menus = [
         deskripsi: "Chicken katsu renyah dengan daging ayam yang juicy dan saus katsu spesial."
     },
 
-
+    // mie
+    {
+        id: 9,
+        nama: "Mie Goreng Spesial",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/miegoreng.png",
+        deskripsi: "Mie goreng dengan topping ayam dan sayuran segar."
+    },
+    {
+        id: 10,
+        nama: "Mie Ayam",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/mieayam.png",
+        deskripsi: "Mie kenyal dengan toping ayam dan sawi."
+    },
+    {
+        id: 11,
+        nama: "Mie Goreng Jawa",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/miegorengjawa.png",
+        deskripsi: "Mie goreng bumbu tradisional dengan aroma khas"
+    },
+    {
+        id: 12,
+        nama: "Mie Ayam Bakso",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/mieayambakso.png",
+        deskripsi: "Mie khas kaki lima dengan telur, kol, dan ayam."
+    },
+    {
+        id: 13,
+        nama: "Mie Kuah Pedas",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/miekuahpedas.png",
+        deskripsi: "Mie khas kaki lima dengan telur, kol, dan ayam."
+    },
+    {
+        id: 14,
+        nama: "Mie Seafood",
+        kategori: "mie",
+        harga: 22000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/mieayamseafood.png",
+        deskripsi: "Mie khas kaki lima dengan telur, kol, dan ayam."
+    },
  
 
 ];
