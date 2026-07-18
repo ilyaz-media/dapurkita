@@ -1,11 +1,11 @@
 const menuList = document.getElementById("menu-list");
 
 function renderMenu(data) {
-    menuList.innerHTML = "";
+  menuList.innerHTML = "";
 
-    data.forEach((menu) => {
-        menuList.innerHTML += `
-            <div
+  data.forEach((menu) => {
+    menuList.innerHTML += `
+<div
     class="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
     <!-- Gambar -->
@@ -16,19 +16,30 @@ function renderMenu(data) {
             alt="${menu.nama}"
             class="w-full h-48 sm:h-56 md:h-48 lg:h-56 object-cover group-hover:scale-110 transition duration-500">
 
-        <!-- Badge -->
+        <!-- Badge Kategori -->
         <span
-            class="absolute top-3 left-3 bg-primary text-white text-[11px] sm:text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg">
+            class="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
 
             ${menu.kategori}
 
         </span>
+
+        <!-- Badge Label -->
+        ${menu.label ? `
+        <span
+            class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow flex items-center gap-1">
+
+            🔥 ${menu.label}
+
+        </span>
+        ` : ""}
 
     </div>
 
     <!-- Content -->
     <div class="p-5 sm:p-6">
 
+        <!-- Nama -->
         <h3
             class="text-xl sm:text-2xl font-bold text-gray-900 line-clamp-1">
 
@@ -36,6 +47,7 @@ function renderMenu(data) {
 
         </h3>
 
+        <!-- Deskripsi -->
         <p
             class="text-sm sm:text-base text-gray-500 mt-3 leading-6 sm:leading-7 line-clamp-2">
 
@@ -43,14 +55,13 @@ function renderMenu(data) {
 
         </p>
 
-        <!-- Harga & Tombol -->
+        <!-- Harga & Rating -->
         <div
-            class="mt-6 flex flex-row  items-center justify-between gap-4">
+            class="mt-6 flex items-center justify-between">
 
-            <!-- Harga -->
             <div>
 
-                <p class="text-xs sm:text-sm text-gray-400">
+                <p class="text-xs text-gray-400">
                     Harga
                 </p>
 
@@ -62,9 +73,17 @@ function renderMenu(data) {
                 </h4>
 
             </div>
-                <span class="text-gray-700">
-                            ⭐ 4.8
-                        </span>
+
+            <div
+                class="flex items-center gap-1 bg-yellow-50 px-3 py-1 rounded-full">
+
+                <span class="text-yellow-500">⭐</span>
+
+                <span class="text-sm font-semibold text-gray-700">
+                    ${menu.rating || "4.8"}
+                </span>
+
+            </div>
 
         </div>
 
@@ -72,38 +91,34 @@ function renderMenu(data) {
 
 </div>
         `;
-    });
+  });
 }
 renderMenu(menus);
-
-
 
 // tombol kategori
 const categoryButtons = document.querySelectorAll(".category-btn");
 
 categoryButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-
-        // Menghilangkan class aktif dari semua tombol
-        categoryButtons.forEach((btn) => {
-            btn.classList.remove("bg-primary", "text-white");
-            btn.classList.add("bg-orange-50", "text-gray-700");
-        });
-
-        // Memberi class aktif pada tombol yang diklik
-        button.classList.remove("bg-orange-50", "text-gray-700");
-        button.classList.add("bg-primary", "text-white");
-
-        // Ambil kategori dari data-category
-        const kategori = button.dataset.category;
-
-        // Filter menu
-        if (kategori === "semua") {
-            renderMenu(menus);
-        } else {
-            const hasil = menus.filter((menu) => menu.kategori === kategori);
-            renderMenu(hasil);
-        }
-
+  button.addEventListener("click", () => {
+    // Menghilangkan class aktif dari semua tombol
+    categoryButtons.forEach((btn) => {
+      btn.classList.remove("bg-primary", "text-white");
+      btn.classList.add("bg-orange-50", "text-gray-700");
     });
+
+    // Memberi class aktif pada tombol yang diklik
+    button.classList.remove("bg-orange-50", "text-gray-700");
+    button.classList.add("bg-primary", "text-white");
+
+    // Ambil kategori dari data-category
+    const kategori = button.dataset.category;
+
+    // Filter menu
+    if (kategori === "semua") {
+      renderMenu(menus);
+    } else {
+      const hasil = menus.filter((menu) => menu.kategori === kategori);
+      renderMenu(hasil);
+    }
+  });
 });
