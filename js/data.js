@@ -1,15 +1,5 @@
 const menus = [
-    {
-        id: 1,
-        nama: "Nasi Goreng",
-        kategori: "daging",
-        harga: 25000,
-        rating: 4.9,
-        label: "Favorit",
-        gambar: "images/menu/nasigoreng.png",
-        deskripsi: "Nasi goreng spesial dengan telur, ayam, dan bumbu pilihan."
-    },
-
+    // mie
     {
         id: 2,
         nama: "Mie Goreng",
@@ -21,6 +11,7 @@ const menus = [
         deskripsi: "Mie goreng dengan topping ayam dan sayuran segar."
     },
 
+    // ayam
     {
         id: 3,
         nama: "Sate Ayam",
@@ -34,12 +25,57 @@ const menus = [
 
     {
         id: 4,
-        nama: "Ayam Geprek",
+        nama: "Ayam Bakar",
         kategori: "ayam",
         harga: 24000,
         rating: 4.9,
         label: "Terbaru",
         gambar: "images/menu/ayambakar.png",
-        deskripsi: "Ayam crispy dengan sambal pedas yang menggugah selera."
-    }
+        deskripsi: "Ayam bakar berbumbu rempah dengan cita rasa gurih dan aroma yang menggoda."
+    },
+    {
+        id: 5,
+        nama: "Ayam geprek",
+        kategori: "ayam",
+        harga: 24000,
+
+        rating: 4.9,
+        label: "Favorit",
+        gambar: "images/menu/ayamgeprek.png",
+        deskripsi: "Ayam crispy  sambal pedas yang menggugah selera."
+    },
+    {
+        id: 6,
+        nama: "Ayam penyet",
+        kategori: "ayam",
+        harga: 27000,
+        rating: 4.9,
+        label: "Terbaru",
+        gambar: "images/menu/ayampenyet.png",
+        deskripsi: "Ayam goreng renyah dengan sambal pedas khas yang menggugah selera."
+    },
+    {
+        id: 5,
+        nama: "Ayam rica",
+        kategori: "ayam",
+        harga: 24000,
+        rating: 4.9,
+        label: "Terbaru",
+        gambar: "images/menu/ayamrica.png",
+        deskripsi: "Ayam rica pedas dengan bumbu rempah khas yang kaya rasa."
+    },
+    {
+        id: 6,
+        nama: "Chicken katsu",
+        kategori: "ayam",
+        harga: 24000,
+        rating: 4.9,
+        label: "Terbaru",
+        gambar: "images/menu/chickenkatsu.png",
+        deskripsi: "Chicken katsu renyah dengan daging ayam yang juicy dan saus katsu spesial."
+    },
+
+
+ 
+
 ];

@@ -49,53 +49,62 @@
         <!-- Content -->
         <div class="relative z-10 container mx-auto h-full px-5 lg:px-8">
 
-            <!-- Navbar -->
-            <nav class="flex items-center justify-between py-6">
+          <!-- Navbar -->
+<nav class="flex items-center justify-between py-4 sm:py-5 lg:py-6">
 
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-3">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
 
-                    <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white text-2xl">
+        <div
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary flex items-center justify-center text-white text-lg sm:text-2xl">
 
-                        <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i>
 
-                    </div>
+        </div>
 
-                    <div>
+        <div>
 
-                        <h2 class="text-2xl font-bold text-white">
-                            Dapur<span class="text-primary">Kita</span>
-                        </h2>
+            <h2 class="text-lg sm:text-2xl font-bold text-white">
+                Dapur<span class="text-primary">Kita</span>
+            </h2>
 
-                        <p class="text-sm text-gray-300">
-                            Rumah Makan
-                        </p>
+            <p class="hidden sm:block text-xs sm:text-sm text-gray-300">
+                Rumah Makan
+            </p>
 
-                    </div>
+        </div>
 
-                </a>
+    </a>
 
-                <!-- Button -->
-                <div class="flex items-center gap-3">
+    <!-- Button -->
+    <div class="flex items-center gap-2 sm:gap-3">
 
-                    <a href="index.html"
-                        class="hidden sm:flex items-center gap-2 px-5 py-3 rounded-full border border-white/30 text-white hover:bg-white hover:text-black duration-300">
+        <!-- Tombol Kembali -->
+        <a href="index.html"
+            class=" md:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white hover:text-black duration-300">
 
-                        <i class="fa-solid fa-arrow-left"></i>
-                        Kembali
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="hidden sm:inline">
+                Kembali
+            </span>
 
-                    </a>
+        </a>
 
-                    <a href="#"
-                        class="px-5 md:px-7 py-3 rounded-full bg-primary text-white font-semibold hover:bg-orange-600 duration-300">
+        <!-- Tombol Pesan -->
+        <a href="#"
+            class="flex items-center justify-center gap-2 px-4 sm:px-5 md:px-7 py-2.5 sm:py-3 rounded-full bg-primary text-white font-semibold hover:bg-orange-600 duration-300">
 
-                        Pesan Sekarang
+            <i class="fa-solid fa-phone"></i>
 
-                    </a>
+            <span class="hidden sm:inline">
+                Pesan Sekarang
+            </span>
 
-                </div>
+        </a>
 
-            </nav>
+    </div>
+
+</nav>
 
             <!-- Hero Content -->
             <div class="flex items-center justify-center text-center h-[calc(100%-88px)]">
@@ -128,116 +137,65 @@
 
     </section>
 
-    <!-- CATEGORY -->
-    <section class="py-16 bg-white">
+   <!-- CATEGORY -->
+<section class="py-12 md:py-16 bg-white">
 
-        <div class="container mx-auto px-5">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
-            <!-- Heading -->
-            <!-- <div class="text-center max-w-2xl mx-auto">
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
 
-            <span class="text-primary font-semibold uppercase tracking-[5px]">
-                Pilih Kategori
-            </span>
+    <button class="category-btn active flex items-center justify-center gap-2 h-12 rounded-xl bg-primary text-white font-medium transition"
+        data-category="semua">
+        <i class="fa-solid fa-utensils"></i>
+        Semua
+    </button>
 
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
-                Temukan Menu Favorit Anda
-            </h2>
+    <button class="category-btn flex items-center justify-center gap-2 h-12 rounded-xl bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
+        data-category="ayam">
+        <i class="fa-solid fa-drumstick-bite"></i>
+        Ayam
+    </button>
 
-            <p class="text-gray-500 mt-4">
-                Jelajahi berbagai kategori makanan yang kami sajikan setiap hari
-                dengan bahan berkualitas dan cita rasa terbaik.
-            </p>
+    <button class="category-btn flex items-center justify-center gap-2 h-12 rounded-xl bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
+        data-category="nasi">
+        <i class="fa-solid fa-bowl-rice"></i>
+        Paket Nasi
+    </button>
 
-        </div> -->
+    <button class="category-btn flex items-center justify-center gap-2 h-12 rounded-xl bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
+        data-category="mie">
+        <i class="fa-solid fa-bowl-food"></i>
+        Mie
+    </button>
 
-            <!-- Category Button -->
-            <div class="mt-5 flex flex-wrap justify-center gap-4">
+    <button class="category-btn flex items-center justify-center gap-2 h-12 rounded-xl bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
+        data-category="seafood">
+        <i class="fa-solid fa-fish"></i>
+        Seafood
+    </button>
 
-                <button class="category-btn active px-7 py-3 rounded-full bg-primary text-white font-medium transition"
-                    data-category="Semua">
+    <button class="category-btn flex items-center justify-center gap-2 h-12 rounded-xl bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
+        data-category="minuman">
+        <i class="fa-solid fa-mug-hot"></i>
+        Minuman
+    </button>
 
-                    Semua
+</div>
 
-                </button>
+        <!-- MENU -->
+        <div id="menu" class="pt-10 md:pt-14">
 
-                <button
-                    class="category-btn px-7 py-3 rounded-full bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
-                    data-category="ayam">
-
-                    🍗 Ayam
-
-                </button>
-
-                <button
-                    class="category-btn px-7 py-3 rounded-full bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
-                    data-category="daging">
-
-                    🥩 Daging
-
-                </button>
-
-                <button
-                    class="category-btn px-7 py-3 rounded-full bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
-                    data-category="mie">
-
-                    🍜 Mie
-
-                </button>
-
-                <button
-                    class="category-btn px-7 py-3 rounded-full bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
-                    data-category="seafood">
-
-                    🦐 Seafood
-
-                </button>
-
-                <button
-                    class="category-btn px-7 py-3 rounded-full bg-orange-50 text-gray-700 hover:bg-primary hover:text-white transition"
-                    data-category="minuman">
-
-                    🥤 Minuman
-
-                </button>
+            <div
+                id="menu-list"
+                class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
 
             </div>
 
-            <!-- MENU -->
-            <section id="menu" class="py-10 ">
-
-                <div class="container mx-auto px-5">
-
-                    <!-- Heading -->
-                    <!-- <div class="text-center max-w-2xl mx-auto mb-14">
-
-            <span class="text-primary font-semibold uppercase tracking-[5px]">
-                Menu Pilihan
-            </span>
-
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
-                Hidangan Terpopuler Kami
-            </h2>
-
-            <p class="text-gray-500 mt-4">
-                Semua hidangan dibuat dengan bahan berkualitas dan diolah
-                langsung oleh koki berpengalaman.
-            </p>
-
-        </div> -->
-
-                    <!-- Grid Menu -->
-                    <div id="menu-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    </div>
-
-                </div>
-
-            </section>
-
         </div>
 
-    </section>
+    </div>
+
+</section>
     <script src="js/data.js"></script>
     <script src="js/menu.js"></script>
 </body>

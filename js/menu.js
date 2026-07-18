@@ -5,58 +5,72 @@ function renderMenu(data) {
 
     data.forEach((menu) => {
         menuList.innerHTML += `
-            <div class="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div
+    class="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
-                <!-- Gambar -->
-                <div class="relative overflow-hidden">
-                    <img
-                        src="${menu.gambar}"
-                        alt="${menu.nama}"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition duration-500">
+    <!-- Gambar -->
+    <div class="relative overflow-hidden">
 
-                    <!-- Badge Kategori -->
-                    <span
-                        class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-4 py-2 rounded-full shadow-lg">
-                        ${menu.kategori}
-                    </span>
-                </div>
+        <img
+            src="${menu.gambar}"
+            alt="${menu.nama}"
+            class="w-full h-48 sm:h-56 md:h-48 lg:h-56 object-cover group-hover:scale-110 transition duration-500">
 
-                <!-- Content -->
-                <div class="p-6">
+        <!-- Badge -->
+        <span
+            class="absolute top-3 left-3 bg-primary text-white text-[11px] sm:text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg">
 
-                    <h3 class="text-2xl font-bold text-gray-900">
-                        ${menu.nama}
-                    </h3>
+            ${menu.kategori}
 
-                    <p class="text-gray-500 mt-3 leading-7 line-clamp-2">
-                        ${menu.deskripsi}
-                    </p>
+        </span>
 
-                    <div class="mt-6 flex items-center justify-between">
+    </div>
 
-                        <div>
-                            <p class="text-sm text-gray-400">
-                                Harga
-                            </p>
+    <!-- Content -->
+    <div class="p-5 sm:p-6">
 
-                            <h4 class="text-2xl font-extrabold text-primary">
-                                Rp ${menu.harga.toLocaleString("id-ID")}
-                            </h4>
-                        </div>
+        <h3
+            class="text-xl sm:text-2xl font-bold text-gray-900 line-clamp-1">
 
-                        <button
-                            class="bg-primary hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
+            ${menu.nama}
 
-                            <i class="fa-solid fa-cart-shopping mr-2"></i>
-                            Pesan
+        </h3>
 
-                        </button>
+        <p
+            class="text-sm sm:text-base text-gray-500 mt-3 leading-6 sm:leading-7 line-clamp-2">
 
-                    </div>
+            ${menu.deskripsi}
 
-                </div>
+        </p>
+
+        <!-- Harga & Tombol -->
+        <div
+            class="mt-6 flex flex-row  items-center justify-between gap-4">
+
+            <!-- Harga -->
+            <div>
+
+                <p class="text-xs sm:text-sm text-gray-400">
+                    Harga
+                </p>
+
+                <h4
+                    class="text-xl sm:text-2xl font-extrabold text-primary">
+
+                    Rp ${menu.harga.toLocaleString("id-ID")}
+
+                </h4>
 
             </div>
+                <span class="text-gray-700">
+                            ⭐ 4.8
+                        </span>
+
+        </div>
+
+    </div>
+
+</div>
         `;
     });
 }
@@ -84,7 +98,7 @@ categoryButtons.forEach((button) => {
         const kategori = button.dataset.category;
 
         // Filter menu
-        if (kategori === "Semua") {
+        if (kategori === "semua") {
             renderMenu(menus);
         } else {
             const hasil = menus.filter((menu) => menu.kategori === kategori);
