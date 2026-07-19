@@ -63,145 +63,165 @@
 <body class="font-poppins bg-white">
 
     <!-- Navbar -->
-    <!-- Navbar -->
-    <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+<!-- ================= Navbar ================= -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
 
-        <div class="container mx-auto">
+    <div class="container mx-auto px-5">
 
-            <nav class="flex items-center justify-between py-5">
+        <nav class="flex items-center justify-between py-5">
 
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
 
-                    <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white text-2xl">
-
-                        <i class="fa-solid fa-house"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h2 id="logo" class="text-2xl font-bold text-white transition-all duration-300">
-
-                            Dapur<span class="text-primary">Kita</span>
-
-                        </h2>
-
-                        <p class="text-sm text-gray-300 transition-all duration-300">
-
-                            Rumah Makan
-
-                        </p>
-
-                    </div>
-
-                </a>
-
-                <!-- Menu -->
-                <ul class="hidden lg:flex items-center gap-10">
-
-                    <li>
-                        <a href="#"
-                            class="menu-link active text-primary font-semibold border-b-2 border-primary pb-1 transition-all duration-300">
-                            Beranda
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="menu-link text-white hover:text-primary transition-all duration-300">
-                            Menu
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="menu-link text-white hover:text-primary transition-all duration-300">
-                            Tentang Kami
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="menu-link text-white hover:text-primary transition-all duration-300">
-                            Galeri
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="menu-link text-white hover:text-primary transition-all duration-300">
-                            Testimoni
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="menu-link text-white hover:text-primary transition-all duration-300">
-                            Kontak
-                        </a>
-                    </li>
-
-                </ul>
-
-                <!-- Button -->
-                <div class="hidden lg:block">
-
-                    <a href="https://wa.me/6282129546021?text=Halo,%20saya%20ingin%20memesan%20makanan." target="_blank"
-                        class="bg-primary flex items-center gap-2 hover:bg-orange-600 duration-300 text-white px-7 py-3 rounded-full font-semibold">
-
-                        <i class="fa-solid fa-phone mr-2"></i>
-
-                        Pesan Sekarang
-                    </a>
-
+                <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white text-2xl">
+                    <i class="fa-solid fa-house"></i>
                 </div>
 
-                <!-- Mobile Button -->
-                <button id="menuButton" class="lg:hidden text-white text-3xl">
+                <div>
+                    <h2 id="logo" class="text-2xl font-bold text-white">
+                        Dapur<span class="text-primary">Kita</span>
+                    </h2>
 
-                    <i class="fa-solid fa-bars"></i>
+                    <p class="text-sm text-gray-300">
+                        Rumah Makan
+                    </p>
+                </div>
 
-                </button>
+            </a>
 
-            </nav>
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex items-center gap-10">
 
-        </div>
+                <li>
+                    <a href="#" class="menu-link text-primary font-semibold">
+                        Beranda
+                    </a>
+                </li>
 
-    </header>
+                <li>
+                    <a href="#menu" class="menu-link text-white hover:text-primary duration-300">
+                        Menu
+                    </a>
+                </li>
 
-    <!-- Mobile Menu -->
+                <li>
+                    <a href="#about" class="menu-link text-white hover:text-primary duration-300">
+                        Tentang Kami
+                    </a>
+                </li>
 
-    <div id="mobileMenu" class="fixed top-0 right-[-100%] w-72 h-screen bg-dark transition-all duration-500 z-50">
+                <li>
+                    <a href="#gallery" class="menu-link text-white hover:text-primary duration-300">
+                        Galeri
+                    </a>
+                </li>
 
-        <div class="flex justify-between items-center p-6">
+                <li>
+                    <a href="#testimoni" class="menu-link text-white hover:text-primary duration-300">
+                        Testimoni
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="menu-link text-white hover:text-primary duration-300">
+                        Kontak
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Button -->
+            <a href="https://wa.me/6282129546021?text=Halo,%20saya%20ingin%20memesan%20makanan."
+                target="_blank"
+                class="hidden lg:flex items-center gap-2 bg-primary hover:bg-orange-600 text-white px-7 py-3 rounded-full font-semibold duration-300">
+
+                <i class="fa-solid fa-phone"></i>
+
+                Hubungi Kami
+
+            </a>
+
+            <!-- Hamburger -->
+            <button id="menuButton" class="lg:hidden text-white text-3xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </div>
+
+    <!-- ================= Mobile Menu ================= -->
+
+    <div id="mobileMenu"
+        class="fixed top-0 right-[-100%] w-72 h-screen bg-dark transition-all duration-500 lg:hidden">
+
+        <div class="flex justify-between items-center p-6 border-b border-gray-700">
 
             <h2 class="text-white text-xl font-bold">
-
                 Menu
-
             </h2>
 
             <button id="closeMenu" class="text-white text-2xl">
-
                 <i class="fa-solid fa-xmark"></i>
-
             </button>
 
         </div>
 
-        <ul class="flex flex-col">
+        <ul class="flex flex-col py-5">
 
-            <li><a href="#" class="mobile-link">Beranda</a></li>
+            <li>
+                <a href="#home" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Beranda
+                </a>
+            </li>
 
-            <li><a href="#" class="mobile-link">Menu</a></li>
+            <li>
+                <a href="#menu" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Menu
+                </a>
+            </li>
 
-            <li><a href="#" class="mobile-link">Tentang Kami</a></li>
+            <li>
+                <a href="#about" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Tentang Kami
+                </a>
+            </li>
 
-            <li><a href="#" class="mobile-link">Galeri</a></li>
+            <li>
+                <a href="#gallery" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Galeri
+                </a>
+            </li>
 
-            <li><a href="#" class="mobile-link">Testimoni</a></li>
+            <li>
+                <a href="#testimoni" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Testimoni
+                </a>
+            </li>
 
-            <li><a href="#" class="mobile-link">Kontak</a></li>
+            <li>
+                <a href="#contact" class="mobile-link block px-6 py-4 text-white hover:bg-primary duration-300">
+                    Kontak
+                </a>
+            </li>
+
+            <li class="px-6 mt-6">
+
+                <a href="https://wa.me/6282129546021?text=Halo,%20saya%20ingin%20memesan%20makanan."
+                    target="_blank"
+                    class="block text-center bg-primary hover:bg-orange-600 text-white rounded-xl py-3 font-semibold duration-300">
+
+                    Hubungi Kami
+
+                </a>
+
+            </li>
 
         </ul>
 
     </div>
+
+</header>
 
     <!-- Hero -->
     <section class="relative pt-32  overflow-hidden">
@@ -1122,21 +1142,6 @@ rounded-full">
                 </div>
 
             </div>
-
-            <!-- Slider Indicator -->
-
-            <div class="flex justify-center gap-2 mt-10">
-
-                <span class="w-3 h-3 rounded-full bg-orange-500"></span>
-
-                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
-
-                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
-
-                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
-
-            </div>
-
         </div>
 
     </section>
