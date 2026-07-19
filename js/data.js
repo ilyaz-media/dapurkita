@@ -126,6 +126,71 @@ const menus = [
         gambar: "images/menu/mieayamseafood.png",
         deskripsi: "Mie khas kaki lima dengan telur, kol, dan ayam."
     },
+    
+    
+    // seafood
+{
+    id: 15,
+    nama: "Udang Saus Padang",
+    kategori: "seafood",
+    harga: 45000,
+    rating: 4.9,
+    label: "Best Seller",
+    gambar: "images/menu/udangsauspadang.png",
+    deskripsi: "Udang segar dimasak dengan saus Padang pedas manis yang menggugah selera."
+  },
+  {
+    id: 16,
+    nama: "Cumi Goreng Tepung",
+    kategori: "seafood",
+    harga: 38000,
+    rating: 4.8,
+    label: "Favorit",
+    gambar: "images/menu/cumigorengtepung.png",
+    deskripsi: "Cumi segar dengan balutan tepung renyah, disajikan bersama saus sambal."
+  },
+  {
+    id: 17,
+    nama: "Kepiting Saus Tiram",
+    kategori: "seafood",
+    harga: 85000,
+    rating: 5.0,
+    label: "Premium",
+    gambar: "images/menu/kepitingsaustiram.png",
+    deskripsi: "Kepiting segar dengan saus tiram khas yang gurih dan kaya rasa."
+  },
+  {
+    id: 18,
+    nama: "Ikan Bakar Jimbaran",
+    kategori: "seafood",
+    harga: 55000,
+    rating: 4.9,
+    label: "",
+    gambar: "images/menu/ikanbakarjimbaran.png",
+    deskripsi: "Ikan bakar dengan bumbu khas Jimbaran, disajikan bersama sambal dan lalapan."
+  },
+  {
+    id: 19,
+    nama: "Kerang Hijau Saus Asam Manis",
+    kategori: "seafood",
+    harga: 32000,
+    rating: 4.7,
+    label: "Baru",
+    gambar: "images/menu/keranghijausausasam.png",
+    deskripsi: "Kerang hijau segar dengan saus asam manis yang segar dan lezat."
+  },
+  {
+    id: 20,
+    nama: "Lobster Bakar Mentega",
+    kategori: "seafood",
+    harga: 175000,
+    rating: 5.0,
+    label: "Signature",
+    gambar: "images/menu/lobstermentega.png",
+    deskripsi: "Lobster segar dibakar dengan saus mentega dan bawang putih premium."
+  }
+
+
  
 
 ];
