@@ -61,6 +61,38 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+// ================================
+// Mobile Menu
+// ================================
+
+const closeMenu = document.getElementById("closeMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = document.querySelectorAll(".mobile-link");
+
+// Buka menu
+menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("right-[-100%]");
+    mobileMenu.classList.add("right-0");
+});
+
+// Tutup menu
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("right-0");
+    mobileMenu.classList.add("right-[-100%]");
+});
+
+// Tutup menu saat link dipilih
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("right-0");
+        mobileMenu.classList.add("right-[-100%]");
+    });
+});
+
+
+
+
 // promo ===========
 new Swiper(".promoSlider", {
 
