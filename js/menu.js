@@ -73,7 +73,7 @@ function renderMenu(data) {
             href="https://gofood.link/u/xxxxxxxx"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-6 w-full bg-primary hover:bg-orange-700 text-white flex gap-3 items-center px-3 justify-center text-center font-semibold py-3 rounded-xl transition duration-300">
+            class="mt-6 w-full bg-red-600 hover:bg-orange-700 text-white flex gap-3 items-center px-3 justify-center text-center font-semibold py-3 rounded-xl transition duration-300">
              <i class="fa-solid fa-utensils"></i>
             Pesan via GoFood
         </a>

@@ -188,7 +188,71 @@ const menus = [
     label: "Signature",
     gambar: "images/menu/lobstermentega.png",
     deskripsi: "Lobster segar dibakar dengan saus mentega dan bawang putih premium."
-  }
+  },
+
+
+//   minuman
+   {
+        id: 21,
+        nama: "Es Teh Manis",
+        kategori: "minuman",
+        harga: 8000,
+        rating: 4.8,
+        label: "Best Seller",
+        gambar: "images/menu/estehmanis.png",
+        deskripsi: "Teh pilihan yang disajikan dingin dengan rasa manis yang menyegarkan."
+    },
+    {
+        id: 22,
+        nama: "Es Jeruk Peras",
+        kategori: "minuman",
+        harga: 12000,
+        rating: 4.9,
+        label: "Fresh",
+        gambar: "images/menu/esjerukperas.png",
+        deskripsi: "Jeruk segar diperas langsung tanpa pemanis buatan."
+    },
+ 
+    {
+        id: 24,
+        nama: "Jus Alpukat",
+        kategori: "minuman",
+        harga: 18000,
+        rating: 4.9,
+        label: "Favorit",
+        gambar: "images/menu/jusalpukat.png",
+        deskripsi: "Jus alpukat creamy dengan topping cokelat yang lezat."
+    },
+    {
+        id: 25,
+        nama: "Jus Mangga",
+        kategori: "minuman",
+        harga: 18000,
+        rating: 4.8,
+        label: "",
+        gambar: "images/menu/jusmangga.png",
+        deskripsi: "Mangga harum manis pilihan yang diblender hingga lembut."
+    },
+    {
+        id: 26,
+        nama: "Kopi Susu",
+        kategori: "minuman",
+        harga: 22000,
+        rating: 5.0,
+        label: "Signature",
+        gambar: "images/menu/eskopisusu.png",
+        deskripsi: "Kopi espresso dipadukan dengan susu segar dan gula aren."
+    },
+    {
+        id: 26,
+        nama: "Air kelapa muda",
+        kategori: "minuman",
+        harga: 22000,
+        rating: 5.0,
+        label: "Segar",
+        gambar: "images/menu/airkelapamuda.png",
+        deskripsi: "Air kelapa muda asli dengan daging kelapa segar yang menyegarkan."
+    }
 
 
  
