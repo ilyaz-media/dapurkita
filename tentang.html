@@ -18,6 +18,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+         <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -109,7 +112,7 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <!-- Left -->
-            <div class="order-2 lg:order-1">
+            <div class="order-2 lg:order-1" data-aos="fade-up">
 
                 <!-- Badge -->
                 <span
@@ -167,7 +170,7 @@
             </div>
 
             <!-- Right -->
-            <div class="relative order-1 lg:order-2">
+            <div class="relative order-1 lg:order-2" data-aos="fade-up" data-aos-delay="300">
 
                 <img
                     src="images/restaurant.png"
@@ -216,26 +219,30 @@
                     <img
                         src="images/restaurant.png"
                         alt="Restaurant"
-                        class="col-span-2 w-full h-56 sm:h-72 md:h-80 lg:h-[420px] rounded-3xl object-cover shadow-lg transition duration-500 hover:scale-[1.02]">
-
+                        class="col-span-2 w-full h-56 sm:h-72 md:h-80 lg:h-[420px] rounded-3xl object-cover shadow-lg transition duration-500 hover:scale-[1.02]" data-aos="fade-up">
+                        
                     <!-- Image 1 -->
                     <img
                         src="images/galeri/pelanggan.png"
                         alt="Pelanggan"
-                        class="w-full h-36 sm:h-48 md:h-56 lg:h-60 rounded-2xl object-cover shadow-md transition duration-500 hover:scale-105">
+                        class="w-full h-36 sm:h-48 md:h-56 lg:h-60 rounded-2xl object-cover shadow-md transition duration-500 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="300"
+                        >
 
                     <!-- Image 2 -->
                     <img
                         src="images/galeri/suasanahangat.png"
                         alt="Suasana Hangat"
-                        class="w-full h-36 sm:h-48 md:h-56 lg:h-60 rounded-2xl object-cover shadow-md transition duration-500 hover:scale-105">
+                        class="w-full h-36 sm:h-48 md:h-56 lg:h-60 rounded-2xl object-cover shadow-md transition duration-500 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="500"
+                        >
 
                 </div>
 
             </div>
 
             <!-- Content -->
-            <div class="order-2 max-w-xl lg:ml-auto">
+            <div class="order-2 max-w-xl lg:ml-auto" data-aos="fade-up" data-aos-delay="300">
 
                 <span
                     class="inline-block text-primary uppercase tracking-[3px] font-semibold text-xs sm:text-sm">
@@ -286,7 +293,7 @@
     <div class="container mx-auto px-5">
 
         <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
 
             <span
                 class="inline-block text-primary uppercase tracking-[4px] sm:tracking-[5px] font-semibold text-xs sm:text-sm">
@@ -319,7 +326,7 @@
 
             <!-- Card 1 -->
             <div
-                class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+              data-aos="fade-up" data-aos-delay="300"  class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
 
                 <div
                     class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-100 text-primary flex items-center justify-center text-xl sm:text-2xl">
@@ -344,7 +351,7 @@
 
             <!-- Card 2 -->
             <div
-                class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+               data-aos="fade-up" data-aos-delay="500" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
 
                 <div
                     class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-100 text-primary flex items-center justify-center text-xl sm:text-2xl">
@@ -369,7 +376,7 @@
 
             <!-- Card 3 -->
             <div
-                class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+               data-aos="fade-up" data-aos-delay="700" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
 
                 <div
                     class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-100 text-primary flex items-center justify-center text-xl sm:text-2xl">
@@ -394,7 +401,7 @@
 
             <!-- Card 4 -->
             <div
-                class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+               data-aos="fade-up" data-aos-delay="900" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:-translate-y-2 hover:shadow-2xl transition duration-300">
 
                 <div
                     class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-100 text-primary flex items-center justify-center text-xl sm:text-2xl">
@@ -424,7 +431,7 @@
 </section>
 
 <!-- statistik -->
-<section class=" bg-[#FFF8F0]">
+<section data-aos="fade-up" class=" bg-[#FFF8F0]">
 
     <div class="container mx-auto px-6">
 
@@ -555,7 +562,7 @@
 </section>
 
 <!-- ================= CTA ================= -->
-<section class="py-16 md:py-20 lg:py-24 bg-[#FFF8F0]">
+<section data-aos="fade-up"  class="py-16 md:py-20 lg:py-24 bg-[#FFF8F0]">
 
     <div class="container mx-auto px-5">
 
@@ -859,5 +866,14 @@
 
     </footer>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
